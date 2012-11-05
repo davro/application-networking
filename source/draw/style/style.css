@@ -1,0 +1,179 @@
+*{
+	color: #333333;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 11px; 
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #FAFAFA;
+}
+h1{
+	color: #333333;
+    font-size: 22px;
+    font-weight: normal;
+	font-family: Arial,Helvetica,sans-serif;
+    margin: 10px 0 10px 0;
+}
+input{
+	font-family: Arial,Helvetica,sans-serif;
+	border: 1px solid #CCCCCC;
+    margin: 0;
+    padding: 3px 4px;
+	width: 100px;
+}
+select{
+	font-family: Arial,Helvetica,sans-serif;
+	border: 1px solid #CCCCCC;
+    margin: 0;
+    padding: 2px;
+	width: 100px;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+
+#main{
+    margin: 0 auto 10px;
+    width: 900px;
+}
+#drawbox{
+	float:left;
+	width:706px;
+}
+#chatbox{
+	float: left;
+	width: 190px;
+	height: 531px;
+	border: 3px solid #CCCCCC;
+	border-left: none;
+}
+#container {
+    width: 700px;
+	height: 500px;
+    background: #ffffff;
+    border: 3px solid #CCCCCC;
+	position: relative;
+}
+.image #container {
+    width: 900px;
+}
+#container img{
+    position: absolute;
+}
+.image #container img:hover{
+    -moz-box-shadow: 0 0 5px 5px #888;
+	-webkit-box-shadow: 0 0 3px 3px #888;
+	box-shadow: 0 0 3px 3px #888;
+}
+#tempCanvas{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#drawing_tool{
+	width: 694px;
+	padding: 3px;
+    border: 3px solid #CCCCCC;
+	border-top: none;
+}
+#drawing_tool .tool{
+	float: left;
+	margin: 0 5px 0 0;
+	height: 22px;
+}
+#drawing_tool .label{
+	display: inline-block;
+    float: left;
+    margin: 4px 6px 0 0;
+}
+#color, #fillcolor{
+	width: 70px;
+}
+#linewidth_msdd{
+	min-width: auto;
+}
+#linewidth_msdd #linewidth_title #linewidth_titletext .ddTitleText{
+	display: none;
+}
+#linewidth_msdd #linewidth_child{
+	width: 77px !important;
+}
+#linewidth_msdd #linewidth_child .ddTitleText{
+	display: none;
+}
+#clearcanvas{
+	cursor: pointer;
+}
+
+#container.eraser.eraser50, #container.eraser.eraser50 *{
+	cursor: url("../images/cursor50.cur") 24 24, default;
+}
+#container.eraser.eraser25, #container.eraser.eraser25 *{
+	cursor: url("../images/cursor25.cur") 12 12, default;
+}
+#container.eraser.eraser10, #container.eraser.eraser10 *{
+	cursor: url("../images/cursor10.cur") 4 4, default;
+}
+#container.eraser.eraser5, #container.eraser.eraser5 *{
+	cursor: url("../images/cursor5.cur") 2 2, default;
+}
+#container.eraser.eraser3, #container.eraser.eraser3 *{
+	cursor: url("../images/cursor3.cur") 1 1, default;
+}
+
+/*chat box*/
+#chatbox #chat-top{
+	border-bottom: 3px solid #CCCCCC;
+    height: 22px;
+    padding: 5px 3px;
+}
+
+#chatbox #chat-inner{
+	border-bottom: 3px solid #CCCCCC;
+    height: 455px;
+    overflow: auto;
+    padding: 5px 0;
+}
+
+#chatbox ul{
+	list-style: none;
+    margin: 0;
+    padding: 0 0 50px;
+}
+#chatbox ul li{
+	padding: 5px 3px 5px 5px;
+}
+#chatbox ul li:nth-child(odd){
+	background-color: #F5F5F5;
+}
+#chatbox #chat-input{
+	height: 14px;
+    margin: 3px 5px;
+    width: 140px;
+	float: left;
+}
+#chatbox #chat-button{
+	background: url("../images/send.png") no-repeat scroll 3px center #E6E6E6;
+    border: 1px solid #BFBFBF;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    height: 20px;
+    margin: 3px 5px 3px 0;
+    width: 22px;
+}
+#chatbox #chat-button:hover{
+	background-color: #F5F5F5;
+}
+

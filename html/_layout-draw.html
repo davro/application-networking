@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Project Networking</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		
+		<!-- CSS :: Framework -->
+		<link rel="stylesheet" href="/assets/template/bootstrap/2.1.0/css/bootstrap.css">
+		<link rel="stylesheet" href="/assets/template/bootstrap/2.1.0/css/bootstrap-responsive.css">
+		<link rel="stylesheet" href="/assets/template/application.css">
+		<link rel="stylesheet" href="/assets/template/google-code-prettify/prettify.css">
+		
+		<!-- CSS :: Application -->
+        <link rel="stylesheet" href="/applications/networking/css/style.css" />
+        <link rel="stylesheet" href="/applications/networking/css/dd.css" />
+        <link rel="stylesheet" href="/jquery-ui/jquery-ui-1.9.1.custom/development-bundle/themes/base/jquery.ui.all.css" />
+
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<link rel="shortcut icon" href="/assets/template/bootstrap/2.1.0/ico/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" href="/assets/template/bootstrap/2.1.0/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/template/bootstrap/2.1.0/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/template/bootstrap/2.1.0/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/template/bootstrap/2.1.0/ico/apple-touch-icon-144-precomposed.png">
+	</head>
+	<body>	
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="brand" href="/">Davro Network</a>
+					<div id="navigation" class="nav-collapse collapse">
+						<ul id="navigation-application" class="nav">
+							<li>
+								<a href="/">Home</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="jumbotron">
+			<div id="header" class="container">
+				<h1 id="header-heading">Networking</h1>
+				<p id="header-tagline" class="lead">Networking visual art.</p>
+				
+				<ul class="masthead-links">
+					<li><a href="/Application">Application</a></li>
+					<li><a href="/Development">Development</a></li>
+					<li><a href="/Mathematics">Mathematics</a></li>
+					<li><a href="/Timestamp">Timestamp</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="container">
+			<!--<div id="content" class="clearfix">-->
+			<div id="content">&nbsp;</div>
+		</div>
+		
+		<div id="fabricator" title="Fabricator">
+			<div id="fabricatorTabs">
+				<ul>
+					<li><a href="#fabric-1"><span>Toolbox</span></a></li>
+					<li><a href="#fabric-2"><span>Chatbox</span></a></li>
+					<li><a href="#fabric-3"><span>About</span></a></li>
+				</ul>
+				<div id="fabric-1">
+					Fabrication tools here.
+				</div>
+				<div id="fabric-2">
+					<div id="chatbox">
+						<div id="chat-top">
+							<span><strong>Chat Name:</strong></span>
+							<input type="text" id="chat-name" value=""/>
+						</div>	
+						<div id="chat-inner">	
+							<ul>
+								<li>Chat text will appear here!</li>
+							</ul>
+						</div>
+						<div id="chat-send">
+							<input type="text" id="chat-input" value="" size="30" />
+							<span id="chat-button">&nbsp;</span>
+						</div>
+					</div>
+					<p>Keep it clean, respect others ;)</p>
+				</div>
+				<div id="fabric-3">
+					<h4>Fabricator 0.0.1</h4>
+					<p>Built By</p>
+					<p><strong>Author:</strong> David Stevens aka 'davro'</p>
+					<p><strong>Author:</strong> <a href="http://www.adhar.info/apps/" target="_blank">Mohammad Ariful Haque</a></p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- JS :: JQuery 1.8 (local @todo) -->
+		<!--<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>-->
+		
+		<!-- JS :: JQuery 1.8 (remote) -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+		
+		<!-- JS :: JQuery 1.7 (local) -->
+		<!--<script type="text/javascript" src="/assets/template/jquery/1.7.2/jquery.js"></script>-->
+		<!--<script type="text/javascript" src="/assets/template/jqueryui/1.7.2/jquery-ui.min.js"></script>-->
+		
+		<!-- JS :: JQuery original -->
+		<!--<script type="text/javascript" src="/applications/networking/js/jquery.js"></script>-->
+		<!--<script type="text/javascript" src="/applications/networking/js/jquery-ui.js"></script>-->
+		
+		<!-- JS :: Bootstrap -->
+		<script type="text/javascript" src="/assets/template/bootstrap/2.1.1/js/bootstrap.js"></script>
+		
+        <!-- JS :: Services -->
+		<!--<script src="http://davro.net:8080/socket.io/socket.io.js"></script>-->
+		<script src="http://localhost:4000/socket.io/socket.io.js"></script>
+		
+		<!-- JS :: Application -->
+        <script type="text/javascript" src="/applications/networking/js/jscolor/jscolor.js"></script>
+        <script type="text/javascript" src="/applications/networking/js/jquery.dd.js"></script>
+        <script type="text/javascript" src="/applications/networking/js/canvas.js"></script>
+        <script type="text/javascript" src="/applications/networking/js/scripts.js"></script>
+		<script type="text/javascript" src="/applications/networking/js/draw.js"></script>
+		
+		
+  <!--<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>-->
+
+	</body>
+</html>
