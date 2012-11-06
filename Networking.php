@@ -111,4 +111,19 @@ class Networking extends Actions {
 		
 	} // end function cronNetworking
 	
+	/**
+	 * Chronological control.
+	 * 
+	 * Methods prefixed with cron will be executed by the framemwork when the 
+	 * system cron is run, annotation for running services.
+	 * 
+	 * @service git 
+	 * @command git fetch --all && git reset --hard origin/master
+	 */
+	public function cronGit() {	
+		
+		return true;
+		
+	} // end function cronGit
+	
 } // end class Drawing
