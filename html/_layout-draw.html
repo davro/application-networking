@@ -64,10 +64,64 @@
 			</div>
 		</div>
 		
-		<div class="container">
-			<!--<div id="content" class="clearfix">-->
+<!--		<div class="container">
+			<div id="content" class="clearfix">
 			<div id="content">&nbsp;</div>
+		</div>-->
+		
+		<div id="main" class="clearfix">
+			<div id="drawbox">
+				<div id="container">
+					<canvas height="500" width="700" id="drawingboard"></canvas>
+					<canvas height="500" width="700" id="tempCanvas"></canvas>
+				</div>
+
+				<div id="drawing_tool" class="clearfix">
+					<div class="tool">
+						<div class="label">Tool:</div>
+						<select id="tool">
+							<option value="pencil" title="../images/pencil_small.png">Pencil</option>
+							<option value="rect" title="../images/rect_small.png">Rectangle</option>
+							<option value="circle" title="../images/circle_small.png">Circle</option>
+							<option value="eraser" title="../images/eraser_small.png">Eraser</option>
+						</select>
+					</div>
+					<div class="tool">
+						<div class="label">Line Colour:</div>
+						<input type="text" id="color" value="" class="colorpicker"/>
+					</div>
+					<div class="tool">
+						<div class="label">Line width:</div>
+						<select id="linewidth">
+							<option value="1" title="../images/line1.png">1</option>
+							<option value="3" title="../images/line3.png">3</option>
+							<option value="5" title="../images/line5.png">5</option>
+							<option value="7" title="../images/line7.png">7</option>
+						</select>
+					</div>
+					<div class="tool">
+						<div class="label">Fill Colour:</div>
+						<input type="text" id="fillcolor" value="" class="colorpicker"/>
+					</div>
+					<div class="tool">
+						<div class="label">Eraser width:</div>
+						<select id="eraserwidth">
+							<option value="3">3 x 3</option>
+							<option value="5">5 x 5</option>
+							<option value="10">10 x 10</option>
+							<option value="25">25 x 25</option>
+							<option value="50">50 x 50</option>
+						</select>
+					</div>
+					<div class="tool">
+						<div class="label">Clear canvas:</div>
+						<img id="clearcanvas" src="../images/trash.png"/>
+					</div>
+				</div>
+			</div>	
+
 		</div>
+		
 		
 		<div id="fabricator" title="Fabricator">
 			<div id="fabricatorTabs">
@@ -125,17 +179,14 @@
 		<script type="text/javascript" src="/assets/template/bootstrap/2.1.1/js/bootstrap.js"></script>
 		
         <!-- JS :: Socket Services -->
-		<script src="http://davro.net:4000/socket.io/socket.io.js"></script>
+		<script type="text/javascript" src="http://davro.net:4000/socket.io/socket.io.js"></script>
 		
 		<!-- JS :: Application -->
         <script type="text/javascript" src="/applications/networking/js/jscolor/jscolor.js"></script>
         <script type="text/javascript" src="/applications/networking/js/jquery.dd.js"></script>
         <script type="text/javascript" src="/applications/networking/js/canvas.js"></script>
-        <script type="text/javascript" src="/applications/networking/js/scripts.js"></script>
+        <!--<script type="text/javascript" src="/applications/networking/js/scripts.js"></script>-->
 		<script type="text/javascript" src="/applications/networking/js/draw.js"></script>
-		
-		
-  <!--<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>-->
 
 	</body>
 </html>
