@@ -118,7 +118,7 @@ class Networking extends Actions {
 	 * system cron is run, annotation for running services.
 	 * 
 	 * @service system 
-	 * @command git fetch --all && git reset --hard origin/master
+	 * @command /usr/bin/git fetch --all && /usr/bin/git reset --hard origin/master
 	 */
 	public function cronGit() {	
 		
