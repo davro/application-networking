@@ -116,7 +116,7 @@ class Networking extends Actions {
 	 * 
 	 * Methods prefixed with cron will be executed by the framemwork when the 
 	 * system cron is run, annotation for running services.
-	 * Old example /usr/bin/git fetch --all && /usr/bin/git reset --hard origin/master
+	 * Broken example /usr/bin/git fetch --all && /usr/bin/git reset --hard origin/master
 	 * 
 	 * @service system
      * @command cd /home/davro/workspace/project-davro.net/applications/Networking && /usr/bin/git pull 
