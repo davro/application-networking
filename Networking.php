@@ -118,7 +118,7 @@ class Networking extends Actions {
 	 * system cron is run, annotation for running services.
 	 * 
 	 * @service system
-     * @command cd /applications/Networking && /usr/bin/git pull 
+     * @command cd applications/Networking && /usr/bin/git pull 
 	 */
 	public function cronGit() {	
 		
