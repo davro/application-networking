@@ -115,7 +115,7 @@ class Networking extends Actions {
 	 * Chronological control.
 	 * 
 	 * Methods prefixed with cron will be executed by the framemwork when the 
-	 * system cron is run, annotation for running services.
+	 * system cron is run, annotation for running services and system commands.
 	 * 
 	 * @service system
      * @command cd applications/Networking && /usr/bin/git pull 
