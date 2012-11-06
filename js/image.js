@@ -15,9 +15,7 @@ $(document).ready(function(){
 
 	var App;
 	App = {};
-	//App.socket = io.connect('http://nodejs.adhar.net:4000');
-	//App.socket = io.connect('http://192.168.0.58:4000');
-	App.socket = io.connect('http://localhost:4000');
+	App.socket = io.connect('http://davro.net:4000');
 
 	// init
 	App.container = document.getElementById('container');

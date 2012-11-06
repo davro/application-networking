@@ -17,8 +17,7 @@ $(function(){
 	}
 
 	// URL (port set in node/application.js)
-//	var url = 'http://localhost:8080';
-	var url = 'http://davro.net:8080';
+	var url = 'http://davro.net:4000';
 
 //	console.log('URL: ' + url);
 
