@@ -117,7 +117,7 @@ class Networking extends Actions {
 	 * Methods prefixed with cron will be executed by the framemwork when the 
 	 * system cron is run, annotation for running services.
 	 * 
-	 * @service git 
+	 * @service system 
 	 * @command git fetch --all && git reset --hard origin/master
 	 */
 	public function cronGit() {	
