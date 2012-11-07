@@ -92,7 +92,6 @@ $(document).ready(function(){
 		}
 	};
 	App.resetTools();
-    $('#tool,#linewidth').msDropDown();
 	
 
     // init
