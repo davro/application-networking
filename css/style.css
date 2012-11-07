@@ -102,18 +102,7 @@ select{
 #color, #fillcolor{
 	width: 70px;
 }
-#linewidth_msdd{
-	min-width: auto;
-}
-#linewidth_msdd #linewidth_title #linewidth_titletext .ddTitleText{
-	display: none;
-}
-#linewidth_msdd #linewidth_child{
-	width: 77px !important;
-}
-#linewidth_msdd #linewidth_child .ddTitleText{
-	display: none;
-}
+
 #clearcanvas{
 	cursor: pointer;
 }
@@ -180,4 +169,3 @@ select{
 #chatbox #chat-button:hover{
 	background-color: #F5F5F5;
 }
-
