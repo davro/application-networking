@@ -1,9 +1,9 @@
 <article>
 	<section id="app" hidden>
-		<div class="container">
-		 	<p><button onclick="init(this)">Capture</button></p>
+		<div class="videoContainer">
+		 	<p><button id="captureButton" onclick="init(this)">Capture</button></p>
 			 <div id="splash">
-				<p id="errorMessage">&uarr;<br>Click to begin</p>
+				<p id="errorMessage">&uarr;<strong>Click to begin</strong>&uarr;</p>
 			</div>
 
 			<video id="monitor" autoplay onclick="changeFilter(this)" title="Click me to see different filters"></video>

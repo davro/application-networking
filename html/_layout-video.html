@@ -50,6 +50,10 @@ body {
 article {
   text-align: center;
 }
+#splash {
+  text-align: center;
+  background: white;
+}
 #monitor {
   /*-webkit-transform: scaleX(-1);*/
   height: 300px;
@@ -64,7 +68,7 @@ article {
   float: left;
   height: 75px;
 }
-.container-removed {
+.videoContainer {
   padding: 10px 25px 5px 25px;
   background: black;
   border-radius: 4px;
@@ -247,7 +251,9 @@ function capture() {
 
 function init(el) {
   if (!navigator.getUserMedia) {
-    document.getElementById('errorMessage').innerHTML = 'Experimental <code>navigator.getUserMedia()</code> is not available in you browser, --enable-media-stream';
+//    document.getElementById('errorMessage').innerHTML = 'Experimental <code>navigator.getUserMedia()</code> is not available in you browser, --enable-media-stream';
+    document.getElementById('captureButton').innerHTML = 'The future is not available in you browser, experimental "navigator.getUserMedia()", chrome --enable-media-stream';
+	document.getElementById('splash').hidden = true;
     return;
   }
   el.onclick = capture;
