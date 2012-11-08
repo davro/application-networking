@@ -95,7 +95,22 @@ class Networking extends Actions {
 		return View::SUCCESS;
 		
 	} // end function executeImage
-	
+
+	/**
+	 * View control method.
+	 * 
+	 * @navigation build
+	 * @layout _layout-video
+	 */
+	public function executeVideo() {
+
+		$this->headerHeading = 'Video with others!';
+		$this->headerTagline = 'Video HTML5 video tag experiment, way of the future!';
+		
+		return View::SUCCESS;
+		
+	} // end function executeVideo	
+
 	/**
 	 * Chronological control.
 	 * 
