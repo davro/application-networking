@@ -60,28 +60,6 @@ article {
   height: 300px;
   /*-webkit-box-reflect: below 20px -webkit-linear-gradient(top, transparent, transparent 80%, rgba(255,255,255,0.2));*/
 }
-#live {
-  position: absolute;
-  z-index: 1;
-  color: white;
-  font-weight: 600;
-  font-family: Arial;
-  font-size: 16pt;
-  right: 35px;
-  top: 20px;
-  text-shadow: 1px 1px red;
-  letter-spacing: 1px;
-}
-#live:before {
-  content: '';
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-  background: red;
-  position: absolute;
-  left: -20px;
-  margin-top: 5px;
-}
 #gallery img {
   position: absolute;
   z-index: -1;
@@ -98,9 +76,7 @@ article {
   display: inline-block;
   position: relative;
 }
-h1 {
-  font-weight: 300;
-}
+
 .blur {
   -webkit-filter: blur(3px);
 }
@@ -174,26 +150,13 @@ h1 {
 			<div id="content">&nbsp;</div>
 		</div>
 				
-		<!-- JS :: JQuery 1.8 (local @todo) -->
-		<!--<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>-->
-		
 		<!-- JS :: JQuery 1.8 (remote) -->
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
 		
-	<!-- JS :: JQuery 1.7 (local) -->
-	<!--<script type="text/javascript" src="/assets/jquery/1.7.2/jquery.js"></script>-->
-	<!--<script type="text/javascript" src="/assets/jqueryui/1.7.2/jquery-ui.min.js"></script>-->
+		<!-- JS :: Bootstrap -->
+		<script type="text/javascript" src="/assets/bootstrap/2.1.1/js/bootstrap.js"></script>
 		
-	<!-- JS :: JQuery original -->
-	<!--<script type="text/javascript" src="/applications/networking/js/jquery.js"></script>-->
-	<!--<script type="text/javascript" src="/applications/networking/js/jquery-ui.js"></script>-->
-		
-	<!-- JS :: Bootstrap -->
-	<script type="text/javascript" src="/assets/bootstrap/2.1.1/js/bootstrap.js"></script>
-		
-        <!-- JS :: Socket Services -->
-	<script src="http://davro.net:4000/socket.io/socket.io.js"></script>
 		
 	</body>
 </html>
