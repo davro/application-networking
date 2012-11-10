@@ -217,11 +217,11 @@ function gotStream(stream) {
 }
 
 function noStream(e) {
-  var msg = 'No camera stream available.';
+  var message = 'Stream no camera available.';
   if (e.code == 1) {
-    msg = 'User denied access to use camera stream.';
+    message = 'Stream user denied access to use camera stream.';
   }
-  document.getElementById('header-heading').textContent = msg;
+  document.getElementById('header-heading').textContent = message;
 }
 
 function capture() {
@@ -254,7 +254,7 @@ function init(el) {
   if (!navigator.getUserMedia) {
 //    document.getElementById('header-heading').innerHTML = 'Experimental <code>navigator.getUserMedia()</code> is not available in you browser, --enable-media-stream';
     document.getElementById('header-heading').innerHTML = 'Video not available';
-    document.getElementById('header-tagline').innerHTML = 'This future is not available in you browser!';
+    document.getElementById('header-tagline').innerHTML = 'This future is not available in your browser!';
     document.getElementById('message').innerHTML= '<p>Requires "navigator.getUserMedia()" Chrome: you could try --enable-media-stream Firefox: 16 supports getUserMedia, then add media.navigator.enabled true in about:config';
 	document.getElementById('splash').hidden = true;
     return;
