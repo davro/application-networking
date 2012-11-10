@@ -50,10 +50,6 @@
 		article {
 		  text-align: center;
 		}
-		#splash {
-		  text-align: center;
-		  background: white;
-		}
 		#monitor {
 		  /*-webkit-transform: scaleX(-1);*/
 		  height: 300px;
@@ -157,7 +153,7 @@
 		<!-- JS :: Bootstrap -->
 		<script type="text/javascript" src="/assets/bootstrap/2.1.1/js/bootstrap.js"></script>
 		
-<script>
+		<script type="text/javascript">
 navigator.getUserMedia = navigator.webkitGetUserMedia || navigator.getUserMedia;
 window.URL = window.URL || window.webkitURL;
 
@@ -203,7 +199,6 @@ function gotStream(stream) {
   stream.onended = noStream;
 
   video.onloadedmetadata = function(e) { // Not firing in Chrome. See crbug.com/110938.
-    document.getElementById('splash').hidden = true;
     document.getElementById('app').hidden = false;
   };
 
@@ -211,7 +206,6 @@ function gotStream(stream) {
   setTimeout(function() {
     canvas.width = video.videoWidth;
     canvas.height = video.videoHeight;
-    document.getElementById('splash').hidden = true;
     document.getElementById('app').hidden = false;
   }, 50);
 }
@@ -252,26 +246,15 @@ function capture() {
 
 function init(el) {
   if (!navigator.getUserMedia) {
-//    document.getElementById('header-heading').innerHTML = 'Experimental <code>navigator.getUserMedia()</code> is not available in you browser, --enable-media-stream';
     document.getElementById('header-heading').innerHTML = 'Video not available';
     document.getElementById('header-tagline').innerHTML = 'This future is not available in your browser!';
     document.getElementById('message').innerHTML= '<p>Requires "navigator.getUserMedia()" Chrome: you could try --enable-media-stream Firefox: 16 supports getUserMedia, then add media.navigator.enabled true in about:config';
-	document.getElementById('splash').hidden = true;
     return;
   }
   el.onclick = capture;
   el.textContent = 'Snapshot';
   navigator.getUserMedia({video: true}, gotStream, noStream);
 }
-
-window.addEventListener('keydown', function(e) {
-  if (e.keyCode == 27) { // ESC
-    document.querySelector('details').open = false;
-  }
-}, false);
-</script>
-
-
-		
+		</script>
 	</body>
 </html>
