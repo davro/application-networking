@@ -105,7 +105,7 @@ class Networking extends Actions {
 	public function executeVideo() {
 
 		$this->headerHeading = 'Video with others!';
-		$this->headerTagline = 'HTML5 video tag experiment, way of the future!';
+		$this->headerTagline = 'HTML5 video tag experiment, way of the future.';
 		
 		return View::SUCCESS;
 		

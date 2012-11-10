@@ -29,86 +29,86 @@
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/bootstrap/2.1.0/ico/apple-touch-icon-114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/bootstrap/2.1.0/ico/apple-touch-icon-144-precomposed.png">
 
-<style>
-@-webkit-keyframes glowRed {
-  from {
-    box-shadow: rgba(255, 0, 0, 0) 0 0 0;
-  }
-  50% {
-    box-shadow: rgba(255, 0, 0, 1) 0 0 15px 1px;
-  }
-  to {
-    box-shadow: rgba(255, 0, 0, 0) 0 0 0;
-  }
-}
-body {
-  display: -webkit-flex;
-  -webkit-align-items: center;
-  -webkit-justify-content: center;
-  box-sizing: border-box;
-}
-article {
-  text-align: center;
-}
-#splash {
-  text-align: center;
-  background: white;
-}
-#monitor {
-  /*-webkit-transform: scaleX(-1);*/
-  height: 300px;
-  /*-webkit-box-reflect: below 20px -webkit-linear-gradient(top, transparent, transparent 80%, rgba(255,255,255,0.2));*/
-}
-#gallery img {
-  position: absolute;
-  z-index: -1;
-  height: 75px;
-}
-#gallery img {
-  float: left;
-  height: 75px;
-}
-.videoContainer {
-  padding: 10px 25px 5px 25px;
-  background: black;
-  border-radius: 4px;
-  display: inline-block;
-  position: relative;
-}
+		<style>
+		@-webkit-keyframes glowRed {
+		  from {
+			box-shadow: rgba(255, 0, 0, 0) 0 0 0;
+		  }
+		  50% {
+			box-shadow: rgba(255, 0, 0, 1) 0 0 15px 1px;
+		  }
+		  to {
+			box-shadow: rgba(255, 0, 0, 0) 0 0 0;
+		  }
+		}
+		body {
+		  display: -webkit-flex;
+		  -webkit-align-items: center;
+		  -webkit-justify-content: center;
+		  box-sizing: border-box;
+		}
+		article {
+		  text-align: center;
+		}
+		#splash {
+		  text-align: center;
+		  background: white;
+		}
+		#monitor {
+		  /*-webkit-transform: scaleX(-1);*/
+		  height: 300px;
+		  /*-webkit-box-reflect: below 20px -webkit-linear-gradient(top, transparent, transparent 80%, rgba(255,255,255,0.2));*/
+		}
+		#gallery img {
+		  position: absolute;
+		  z-index: -1;
+		  height: 75px;
+		}
+		#gallery img {
+		  float: left;
+		  height: 75px;
+		}
+		.videoContainer {
+		  padding: 10px 25px 5px 25px;
+		  background: black;
+		  border-radius: 4px;
+		  display: inline-block;
+		  position: relative;
+		}
 
-.blur {
-  -webkit-filter: blur(3px);
-}
-.brightness {
-  -webkit-filter: brightness(5);
-}
-.contrast {
-  -webkit-filter: contrast(8);
-}
-.hue-rotate {
-  -webkit-filter: hue-rotate(90deg);
-}
-.hue-rotate2 {
-  -webkit-filter: hue-rotate(180deg);
-}
-.hue-rotate3 {
-  -webkit-filter: hue-rotate(270deg);
-}
-.saturate {
-  -webkit-filter: saturate(10);
-}
-.grayscale {
-  -webkit-filter: grayscale(1);
-}
-.sepia {
-  -webkit-filter: sepia(1);
-}
-.invert {
-  -webkit-filter: invert(1)
-}
-</style>
-
+		.blur {
+		  -webkit-filter: blur(3px);
+		}
+		.brightness {
+		  -webkit-filter: brightness(5);
+		}
+		.contrast {
+		  -webkit-filter: contrast(8);
+		}
+		.hue-rotate {
+		  -webkit-filter: hue-rotate(90deg);
+		}
+		.hue-rotate2 {
+		  -webkit-filter: hue-rotate(180deg);
+		}
+		.hue-rotate3 {
+		  -webkit-filter: hue-rotate(270deg);
+		}
+		.saturate {
+		  -webkit-filter: saturate(10);
+		}
+		.grayscale {
+		  -webkit-filter: grayscale(1);
+		}
+		.sepia {
+		  -webkit-filter: sepia(1);
+		}
+		.invert {
+		  -webkit-filter: invert(1)
+		}
+		</style>
 	</head>
+	
 	<body>	
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-inner">
@@ -135,6 +135,11 @@ article {
 				<h1 id="header-heading">Networking</h1>
 				<p id="header-tagline" class="lead">Networking using Video.</p>
 				
+				<div class="container">
+					<!--<div id="content" class="clearfix">-->
+					<div id="content">&nbsp;</div>
+				</div>
+				
 				<ul class="masthead-links">
 					<li><a href="/Application">Application</a></li>
 					<li><a href="/Development">Development</a></li>
@@ -144,10 +149,6 @@ article {
 			</div>
 		</div>
 		
-		<div class="container">
-			<!--<div id="content" class="clearfix">-->
-			<div id="content">&nbsp;</div>
-		</div>
 				
 		<!-- JS :: JQuery 1.8 (remote) -->
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
@@ -220,7 +221,7 @@ function noStream(e) {
   if (e.code == 1) {
     msg = 'User denied access to use camera stream.';
   }
-  document.getElementById('errorMessage').textContent = msg;
+  document.getElementById('header-heading').textContent = msg;
 }
 
 function capture() {
@@ -251,8 +252,10 @@ function capture() {
 
 function init(el) {
   if (!navigator.getUserMedia) {
-//    document.getElementById('errorMessage').innerHTML = 'Experimental <code>navigator.getUserMedia()</code> is not available in you browser, --enable-media-stream';
-    document.getElementById('captureButton').innerHTML = 'The future is not available in you browser, experimental "navigator.getUserMedia()", chrome --enable-media-stream';
+//    document.getElementById('header-heading').innerHTML = 'Experimental <code>navigator.getUserMedia()</code> is not available in you browser, --enable-media-stream';
+    document.getElementById('header-heading').innerHTML = 'Video not available';
+    document.getElementById('header-tagline').innerHTML = 'This future is not available in you browser!';
+    document.getElementById('message').innerHTML= '<p>Requires "navigator.getUserMedia()" Chrome: you could try --enable-media-stream Firefox: 16 supports getUserMedia, then add media.navigator.enabled true in about:config';
 	document.getElementById('splash').hidden = true;
     return;
   }
