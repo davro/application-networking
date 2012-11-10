@@ -90,7 +90,7 @@ class Networking extends Actions {
 	public function executeImage() {
 
 		$this->headerHeading = 'Image share, just drag drop!';
-		$this->headerTagline = 'Just drag and drop images from your computer on to this website. Press and hold SHIFT key to drag out the image on your dard disk i.e. on your desktop. If drag out does not work on your browser you can right click on the image and save it on your computer';
+		$this->headerTagline = 'Just drag and drop images from your computer on to this website. Press and hold SHIFT key to drag out the image on your hard disk i.e. on your desktop. If drag out does not work on your browser you can right click on the image and save it on your computer';
 		
 		return View::SUCCESS;
 		
