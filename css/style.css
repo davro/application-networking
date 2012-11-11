@@ -40,7 +40,8 @@ select{
 
 #main{
     margin: 0 auto 10px;
-    width: 900px;
+    /*width: 900px;*/
+    width: 700px;
 }
 #drawbox{
 	float:left;

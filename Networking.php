@@ -46,30 +46,6 @@ class Networking extends Actions {
 	 * View control method.
 	 * 
 	 * @navigation build
-	 * @layout _layout
-	 */
-	public function executeFabric() {
-
-		$this->headerHeading = 'Fabricate with others!';
-		$this->headerTagline = 'Fabrication is a process or service relating to the production of large or technically difficult artworks.';
-		
-		$this->content = $this->engine->create('div'
-			, ''
-			, array('id'=>'fabric')
-			, array(
-				$this->engine->create('h2', 'Coming soon!'),
-				$this->engine->create('div', 'Wireframe, Prototype, Development, Services.'),
-			)
-		);
-		
-		return View::SUCCESS;
-		
-	} // end function executeFabric
-	
-	/**
-	 * View control method.
-	 * 
-	 * @navigation build
 	 * @layout _layout-draw
 	 */
 	public function executeDraw() {
