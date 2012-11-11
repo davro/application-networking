@@ -6,6 +6,7 @@ $(document).ready(function(){
 	
 	//localstorage
 	App.writeToStorage = function(name, value) {
+		console.log(localStorage[name]);
 		if(typeof(Storage) !== "undefined"){
 			localStorage[name] = value;
 		}
